@@ -21,33 +21,17 @@
 double ir_measure_cm(uint16_t read_channel)
 {
     uint16_t read = ADC1_Read( read_channel );
+
     float vadc;
     float vref33;
-    float b3;
 
-    float a3;
-    float threshold;
-    double y;
-    float a;
-    float b;
+    vadc = ( float ) read * 0.000804878f;
 
-    a = 49.96f;
-    b  = -1.34f;
-    vref33 = 0.0008058608f;
-    vadc;
-    threshold = 3.0f;
-    y = 0.0;
-
-    vadc = ( float ) read * vref33;
-
-    if ( vadc > threshold )
+    if ( vadc > 3.0f )
         return 0.0;
 
-    y = pow( vadc, b );
-    y *= a;
+    y = pow( vadc, -1.49 );
+    y *= 49.956f;
 
-    if( y <= 20.0 )
-        return y;
-    else if( y > 20.0 && y <= 110.0 )
-        return y - 3.0f;
+    return y + 0.37f;
 }
