@@ -1,4 +1,5 @@
-# Mikroe-Buggy
+# Implementation of the control algorithm for the ‘buggy’ mobile robot via application of infrared distance measuring sensors
+## Introduction
 Paper presents one simple control algorithm for specific mobile robot system. The hardware architecture of the buggy robot and the use of certain types of sensors have been reviewed. The implementation of the movement of a mobile robot on a flat surface is presented and certain defects of applied robotic platforms have been discussed. A software library for sensors applied in this particular case has been established. Improvements of control structures by using intelligent systems and the data obtained from the sensors have been recommended. At the end of the paper there is a presentation of the results and potential further development suggestions.
 
 Mobile robots, with their versatility in areas of application, gradually move from the classical industrial plants to our everyday lives. In most cases, people act and reside within a robot’s working space. Consequently, such a working space becomes extremely dynamic; therefore, the robots are faced with growing demands for an intelligent behavior.
