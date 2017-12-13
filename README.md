@@ -11,4 +11,4 @@ Mobile robots explore new, unknown space using their sensors, which collect info
 
 The method presented in this paper represents the expansion of robotic development platforms. Buggy, with its infrared distance measuring sensors, respectively bypasses dynamic obstacles within the operation area of the robot, demonstrating integration of these components.
 
-[![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.youtube.com/watch?v=JShJBjiNkRI)
+[![Watch the video]()](https://www.youtube.com/watch?v=JShJBjiNkRI)
